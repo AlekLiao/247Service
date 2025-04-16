@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>247在線客服系統 - 客戶界面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- 聊天紀錄區域 -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- 客服訊息範例 -->
+            <div class="message agent-message">
+                <div class="message-content">
+                    <div class="agent-avatar">
+                        <img src="images/ServiceAvatar.png" alt="客服頭像" class="avatar-img">
+                    </div>
+                    <div class="message-bubble">
+                        您好，我是xxx<br>
+                        客服小幫手，很高興為您服務。
+                    </div>
+                    <div class="message-time">HH:MM:SS</div>
+                </div>
+            </div>
+            
+            <!-- 用戶訊息範例 -->
+            <div class="message user-message">
+                <div class="message-content">
+                    <div class="message-time">HH:MM:SS</div>
+                    <div class="message-bubble">我有問題</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 訊息輸入區域 -->
+        <div class="chat-input-container">
+            <button class="upload-button">
+                <img src="images/upload_image.png" alt="上傳圖片">
+            </button>
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" placeholder="請描述您的問題...">
+                <button class="emoji-button">
+                    <img src="images/emoji.png" alt="表情符號">
+                </button>
+            </div>
+            <button class="send-button" id="sendButton">
+                <img src="images/send.png" alt="發送">
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
